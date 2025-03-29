@@ -1,0 +1,38 @@
+raylib-zig gamedevs
+29032025/1553
+-------------------------
+hal yg pertama harus dilakukan adalah
+/////
+mk project_name
+cd project_name
+/////
+
+lalu visit: https://github.com/Not-Nik/raylib-zig
+cari 'In an existing project (e.g. created with zig init)'
+run:
+/////
+zig fetch --save git+https://github.com/Not-Nik/raylib-zig#devel
+/////
+
+di current project, kemudian baru copas2 configuration yg ada di
+raylib-zig github tadi, saya udah tulis 'comment' di build.zig untuk
+peletakkannya `code` -nya dimana aja, silahkan di ikuti.
+
+!!!: jangan di 'rem' file `buil.zig.bak` -nya karna ada komen perintah
+peletakan, jadi kalo build.zig kehapus bisa 'ccp' `.bak` tersebut :!!!
+
+jika error wayland-scanner lakukan ini:
+/////
+which wayland-scanner
+wayland-scanner --version
+/////
+jika tidak ada respon, lakukan ini:
+/////
+sudo apt install libwayland-dev wayland-protocols libxkbcommon-dev libegl1-mesa-dev \
+                 libgl1-mesa-dev libgles2-mesa-dev libx11-dev \
+                 libxcursor-dev libxrandr-dev libxi-dev libxinerama-dev \
+                 libxrender-dev libxfixes-dev libxext-dev
+/////
+lalu lakukan `zig build run` kembali,
+jika muncul error lagi, berarti ada yg kurng diinstall,
+tanya chatbot kembali.

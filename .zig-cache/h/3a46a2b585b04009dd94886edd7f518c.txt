@@ -1,0 +1,2 @@
+0
+8232 1597698 1743228669046705207 0faa6fe450786d852021ccf047cce9bf 3 p/raylib-5.5.0-whq8uFV0zQA9NXxhpYFZk_yHW6xzg5eKGmOtMJ2DOTdU/src/external/glfw/deps/wayland/viewporter.xml
